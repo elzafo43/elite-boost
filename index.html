@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#09090c">
+<meta name="description" content="ELITE BOOST — Valorant aim eğitimi, kişisel koçluk ve oyun analizi. Hesap paylaşımı yok, gelişim tamamen senin kontrolünde.">
+<title>ELITE BOOST — Aim. Learn. Dominate.</title>
+<style>
+:root{--bg:#09090c;--panel:#121217;--panel2:#18181f;--red:#ff3048;--red2:#c90f2b;--white:#f6f6f8;--muted:#a5a5b2;--line:#2b2b35;--green:#72f0ad}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}
+.logo{font-size:1.1rem;font-weight:950;letter-spacing:.12em}.logo span{color:var(--red)}.navlinks{display:flex;gap:26px;color:#c7c7d0;font-size:.9rem}.navlinks a:hover{color:white}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:5px;padding:13px 19px;background:var(--red);color:white;font-weight:850;letter-spacing:.02em;cursor:pointer;transition:.2s}.btn:hover{background:#ff5366;transform:translateY(-1px)}.btn.secondary{background:transparent;border:1px solid #555560}.btn.secondary:hover{border-color:var(--red)}
+.hero{position:relative;overflow:hidden;padding:92px 0 78px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 78% 45%,#8b102c33,transparent 40%),linear-gradient(115deg,#09090c 30%,#111016 100%)}
+.hero:after{content:"";position:absolute;right:-80px;top:35px;width:440px;height:440px;border:1px solid #ff30482b;transform:rotate(28deg);box-shadow:0 0 0 40px #ff304808,0 0 0 80px #ff304805;pointer-events:none}
+.eyebrow{font-size:.76rem;letter-spacing:.22em;font-weight:900;color:var(--red);text-transform:uppercase}.hero h1{font-size:clamp(3.2rem,8vw,6.5rem);line-height:.92;letter-spacing:-.07em;margin:20px 0;max-width:780px;font-weight:1000}.hero h1 em{font-style:normal;color:var(--red)}.hero p{max-width:570px;color:#b7b7c2;font-size:1.08rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.hero-note{margin-top:25px;color:#8f8f9b;font-size:.8rem}.hero-note strong{color:var(--green)}
+section{padding:72px 0}.section-top{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}.section-top h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.05;margin:8px 0 0;letter-spacing:-.04em}.section-top p{color:var(--muted);max-width:420px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:25px;background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:8px;position:relative;overflow:hidden}.card:before{content:"";position:absolute;top:0;left:0;width:42px;height:3px;background:var(--red)}.num{font-size:.76rem;color:var(--red);font-weight:900;letter-spacing:.14em}.card h3{font-size:1.3rem;margin:13px 0 8px}.card p{font-size:.94rem;color:var(--muted);margin:0 0 17px}.card ul{list-style:none;padding:0;margin:0;color:#d7d7df;font-size:.9rem}.card li{padding:7px 0;border-top:1px solid #ffffff0d}.card li:before{content:"＋";color:var(--red);margin-right:9px;font-weight:900}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{border-left:2px solid var(--red);padding:5px 0 5px 18px}.step b{font-size:1.05rem}.step p{color:var(--muted);font-size:.92rem;margin:7px 0 0}
+.order{background:linear-gradient(130deg,#160b10,#0c0c11 65%);border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12}.order-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:38px;align-items:start}.order-copy h2{font-size:clamp(2.2rem,5vw,3.8rem);line-height:.98;letter-spacing:-.06em;margin:14px 0}.order-copy p{color:var(--muted)}.privacy{font-size:.85rem;color:#c5c5ce;border:1px solid var(--line);background:#ffffff05;padding:14px;border-radius:6px;margin-top:22px}
+form{background:#111116;border:1px solid #34343e;border-radius:8px;padding:24px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:.83rem;color:#dedee5;font-weight:750}input,select,textarea{width:100%;background:#09090d;border:1px solid #373742;color:white;border-radius:4px;padding:12px;font:inherit;font-size:.92rem;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--red)}textarea{min-height:95px;resize:vertical}.form-help{font-size:.78rem;color:#9696a3}.submit{width:100%;margin-top:18px}.result{display:none;margin-top:16px;padding:14px;border:1px solid #3b7857;background:#0c2117;color:#c8ffdc;border-radius:5px;white-space:pre-wrap;font-size:.9rem}.result.show{display:block}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}.faq article{padding:20px;border:1px solid var(--line);border-radius:6px;background:#101015}.faq h3{font-size:1rem;margin:0 0 7px}.faq p{color:var(--muted);font-size:.9rem;margin:0}
+footer{padding:28px 0;color:#888894;font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px}.disclaimer{max-width:760px}
+@media(max-width:760px){.navlinks{display:none}.hero{padding:68px 0 60px}.hero:after{right:-270px;opacity:.7}.grid,.steps,.order-layout,.faq{grid-template-columns:1fr}.section-top{align-items:start;flex-direction:column}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:55px 0}.order-layout{gap:24px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav>
+<a class="logo" href="#" aria-label="ELITE BOOST ana sayfa">ELITE<span>BOOST</span></a>
+<div class="navlinks"><a href="#hizmetler">Hizmetler</a><a href="#nasil">Nasıl çalışır?</a><a href="#siparis">Sipariş formu</a><a href="#sss">SSS</a></div>
+<a class="btn" href="#siparis">EĞİTİM TALEP ET</a>
+</nav>
+</header>
+<main>
+<section class="hero">
+<div class="wrap">
+<div class="eyebrow">PERFORMANSINI BİR ÜST SEVİYEYE TAŞI</div>
+<h1>AIM.<br><em>LEARN.</em><br>DOMINATE.</h1>
+<p>Rastgele oynamayı bırak. Aim rutinleri, birebir koçluk ve maç analiziyle kararlarını geliştir; gelişiminin kontrolü sende olsun.</p>
+<div class="hero-actions"><a class="btn" href="#siparis">EĞİTİMİNİ PLANLA ↗</a><a class="btn secondary" href="#hizmetler">HİZMETLERİ KEŞFET</a></div>
+<div class="hero-note"><strong>✓ Hesap şifresi istemiyoruz.</strong> Eğitim, kendi hesabın ve kendi oyunun üzerinden ilerler.</div>
+</div>
+</section>
+<section id="hizmetler">
+<div class="wrap">
+<div class="section-top"><div><div class="eyebrow">HİZMETLER</div><h2>DAHA AKILLI OYNA.</h2></div><p>İhtiyacına uygun bir çalışma planı seç. Paket içerikleri ve ücretler, talebin alındıktan sonra netleştirilir.</p></div>
+<div class="grid">
+<article class="card"><div class="num">01 / MECHANICS</div><h3>Aim & Mekanik</h3><p>Isınma rutinini ve nişan kontrolünü daha tutarlı hale getir.</p><ul><li>Kişisel aim rutini</li><li>Crosshair placement çalışması</li><li>Hareket ve atış disiplini</li></ul></article>
+<article class="card"><div class="num">02 / COACHING</div><h3>Birebir Koçluk</h3><p>Oyun içi kararlarını ve round yaklaşımını birlikte değerlendir.</p><ul><li>Rol ve ajan havuzu değerlendirmesi</li><li>Harita ve pozisyon kararları</li><li>İletişim ve takım oyunu</li></ul></article>
+<article class="card"><div class="num">03 / VOD REVIEW</div><h3>Maç Analizi</h3><p>Kendi maç kaydındaki hataları fark et ve uygulanabilir hedefler belirle.</p><ul><li>VOD üzerinden geri bildirim</li><li>Tekrarlanan hata tespiti</li><li>Takip edilebilir gelişim hedefleri</li></ul></article>
+</div>
+</div>
+</section>
+<section id="nasil">
+<div class="wrap">
+<div class="section-top"><div><div class="eyebrow">SÜREÇ</div><h2>ÜÇ ADIMDA BAŞLA.</h2></div></div>
+<div class="steps">
+<div class="step"><b>01. Talebini gönder</b><p>Formda seviyeni, hedefini ve istediğin eğitim türünü belirt.</p></div>
+<div class="step"><b>02. Planını netleştir</b><p>Uygunluk, seans süresi ve ücret karşılıklı olarak onaylanır.</p></div>
+<div class="step"><b>03. Çalışmaya başla</b><p>Belirlenen seansa katıl, geri bildirim al ve gelişimini takip et.</p></div>
+</div>
+</div>
+</section>
+<section class="order" id="siparis">
+<div class="wrap order-layout">
+<div class="order-copy"><div class="eyebrow">SİPARİŞ / ÖN TALEP</div><h2>OYUNUNU<br>GELİŞTİR.</h2><p>Formu doldurup gönder. Talebin güvenli form altyapısı üzerinden bildirim e-postana iletilir.</p><div class="privacy">🔒 <b>Güvenli yaklaşım</b><br>Riot ID dışında hesap bilgisi paylaşma. Şifre, e-posta şifresi veya doğrulama kodu istenmez.</div></div>
+<form id="orderForm" action="https://formsubmit.app/f/YOUR_FORM_ID" method="POST">
+<input type="hidden" name="_subject" value="ELITE BOOST — Yeni eğitim talebi">
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px" value="">
+<div class="form-grid">
+<div class="field"><label for="name">Adın / takma adın *</label><input id="name" name="name" required maxlength="60" placeholder="Örn. Ace"></div>
+<div class="field"><label for="contact">İletişim e-postan *</label><input id="contact" name="email" type="email" required maxlength="120" placeholder="ornek@mail.com"></div>
+<div class="field"><label for="rank">Mevcut seviyen *</label><select id="rank" name="rank" required><option value="">Seç</option><option>Demir</option><option>Bronz</option><option>Gümüş</option><option>Altın</option><option>Platin</option><option>Elmas</option><option>Yücelik</option><option>Ölümsüz</option><option>Radyant</option><option>Emin değilim</option></select></div>
+<div class="field"><label for="service">Hizmet türü *</label><select id="service" name="service" required><option value="">Seç</option><option>Aim & mekanik eğitimi</option><option>Birebir koçluk</option><option>Maç / VOD analizi</option><option>Kombine gelişim planı</option></select></div>
+<div class="field"><label for="duration">Tercih edilen süre</label><select id="duration" name="duration"><option>30 dakika</option><option selected>60 dakika</option><option>90 dakika</option><option>Birden fazla seans</option></select></div>
+<div class="field"><label for="contactMethod">Tercih edilen iletişim</label><select id="contactMethod" name="contactMethod"><option>E-posta</option><option>Discord (sonradan paylaşırım)</option></select></div>
+<div class="field full"><label for="goal">Hedefin / notun</label><textarea id="goal" name="goal" maxlength="700" placeholder="Örn. crosshair placement, spray kontrolü veya maç kararları..."></textarea></div>
+<div class="field full"><label style="display:flex;gap:10px;align-items:flex-start;font-weight:500"><input type="checkbox" id="consent" required style="width:auto;margin-top:4px"> Bu formu göndererek bilgilerimin yalnızca talebime yanıt vermek için kullanılmasını kabul ediyorum.</label></div>
+</div>
+<button class="btn submit" type="submit">TALEBİ HAZIRLA ↗</button>
+<div class="form-help" style="margin-top:10px">Bu form eğitim talebi içindir; otomatik ödeme alınmaz. Gönderimden önce hizmet ve ücret karşılıklı onaylanır.</div>
+<div id="result" class="result" role="status" aria-live="polite"></div>
+</form>
+</div>
+</section>
+<section id="sss">
+<div class="wrap"><div class="section-top"><div><div class="eyebrow">MERAK EDİLENLER</div><h2>SIK SORULAN SORULAR.</h2></div></div>
+<div class="faq">
+<article><h3>Hesap şifremi paylaşmam gerekiyor mu?</h3><p>Hayır. Şifre, doğrulama kodu veya hesabına giriş izni istenmez.</p></article>
+<article><h3>Rank garantisi veriliyor mu?</h3><p>Hayır. Performans ve sonuçlar oyuncuya, pratiğe ve maç koşullarına bağlıdır. Rank yükseltme garantisi verilmez.</p></article>
+<article><h3>Ödeme nasıl yapılır?</h3><p>Bu ilk sürümde ödeme alınmaz. Hizmet, ücret ve ödeme koşulları talep sonrası açıkça onaylanmalıdır.</p></article>
+<article><h3>ELITE BOOST, Riot Games'in resmi sitesi mi?</h3><p>Hayır. ELITE BOOST bağımsız bir eğitim konseptidir ve Riot Games ile bağlantılı veya sponsorlu değildir.</p></article>
+</div></div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><a class="logo" href="#">ELITE<span>BOOST</span></a><div>© <span id="year"></span> ELITE BOOST. Tüm hakları saklıdır.</div></div><div class="disclaimer">ELITE BOOST bağımsız bir hizmettir; Riot Games veya VALORANT tarafından desteklenmez, onaylanmaz ya da işletilmez. VALORANT ve ilgili markalar sahiplerine aittir.</div></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
